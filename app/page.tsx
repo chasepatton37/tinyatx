@@ -327,7 +327,7 @@ export default function Home() {
 
           <div className="relative min-h-[430px] overflow-hidden rounded-[40px] bg-[#efe7dc] shadow-lg md:min-h-[560px]">
             <img
-              src="https://images.unsplash.com/photo-1543340713-8e7d3df7ea36?auto=format&fit=crop&w=1400&q=80"
+              src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=1400&q=80"
               alt="Toddler sitting at an outdoor Austin patio"
               className="h-full w-full object-cover"
             />
