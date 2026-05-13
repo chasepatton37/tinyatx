@@ -265,8 +265,8 @@ export default function Home() {
               TinyATX
             </h1>
             <p className="mt-5 max-w-2xl text-lg leading-8 text-[#335349] md:text-xl">
-              Restaurants, parks, play spots, coffee stops, and weekly activities
-              that make Austin easier with little kids.
+              Restaurants with playgrounds, splash pads, breweries, parks, coffee
+              stops, and weekly activities that make Austin easier with little kids.
             </p>
 
             <div className="mt-8 max-w-2xl rounded-lg border border-[#e8e0d6] bg-white p-3 shadow-sm">
@@ -315,8 +315,8 @@ export default function Home() {
             <div className="mt-7 flex items-start gap-3 text-[#426257]">
               <ShieldCheck className="mt-0.5 h-5 w-5 text-[#b75e4f]" />
               <span className="text-base">
-                Built for parent-level details: shade, noise, bathrooms, parking,
-                and whether the outing is worth packing snacks for.
+                Built for parent-level details: playgrounds, splash pads, shade,
+                bathrooms, parking, and whether the outing is worth packing snacks for.
               </span>
             </div>
           </div>
@@ -350,7 +350,7 @@ export default function Home() {
           <SectionTitle
             eyebrow="Starter directory"
             title="Real Austin Spots"
-            text="A first pass at dependable places for toddler-friendly mornings, meals, and energy burns."
+            text="A growing list of dependable places for toddler-friendly mornings, meals, splash-pad stops, and energy burns."
           />
 
           <div className="mb-5 flex flex-wrap gap-3">

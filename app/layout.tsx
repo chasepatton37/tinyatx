@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "TinyATX",
   description:
-    "Austin restaurants, parks, play spots, and weekly activities for families with little kids.",
+    "Austin playground restaurants, breweries, splash pads, parks, play spots, and weekly activities for families with little kids.",
 };
 
 export default function RootLayout({

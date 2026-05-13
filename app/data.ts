@@ -1,7 +1,14 @@
 export type Spot = {
   id: number;
   name: string;
-  category: "Restaurant" | "Brewery" | "Coffee" | "Play Spot" | "Park" | "Nature";
+  category:
+    | "Restaurant"
+    | "Brewery"
+    | "Beer Garden"
+    | "Coffee"
+    | "Play Spot"
+    | "Park"
+    | "Nature";
   neighborhood: string;
   ages: string;
   address: string;
@@ -232,6 +239,276 @@ export const spots: Spot[] = [
     sourceUrl: "https://www.loroeats.com/locations/austin/south-lamar/",
     sourceLabel: "Loro",
   },
+  {
+    id: 12,
+    name: "Austin Beerworks Sprinkle Valley",
+    category: "Brewery",
+    neighborhood: "Northeast Austin",
+    ages: "2-8",
+    address: "10300 Springdale Rd.",
+    tags: ["Play area", "Food trucks", "Outdoor"],
+    summary:
+      "A huge taproom and beer garden with food, wide outdoor space, games, and a family-friendly play setup.",
+    parentNote:
+      "Best when kids need space more than a formal activity. Check the event calendar before going because big events can change the vibe.",
+    image:
+      "https://images.unsplash.com/photo-1528823872057-9c018a7a7553?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Outdoor brewery patio with picnic tables",
+    sourceUrl: "https://austinbeerworks.com/",
+    sourceLabel: "Austin Beerworks",
+  },
+  {
+    id: 13,
+    name: "Fast Friends Beer Co.",
+    category: "Brewery",
+    neighborhood: "Southeast Austin",
+    ages: "1-8",
+    address: "7313 N. Interstate 35 Frontage Rd.",
+    tags: ["Playground", "Pizza", "Patio"],
+    summary:
+      "A roomy South Austin brewery and restaurant with indoor/outdoor seating, beer, pizza, and a kid-friendly playground setup.",
+    parentNote:
+      "Good for mixed groups where some people want beer, some want food, and kids need a defined place to play.",
+    image:
+      "https://images.unsplash.com/photo-1532635241-17e820acc59f?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Beer garden tables under string lights",
+    sourceUrl: "https://fastfriendsbeer.com/",
+    sourceLabel: "Fast Friends Beer Co.",
+  },
+  {
+    id: 14,
+    name: "Dionysus Oak Hill",
+    category: "Beer Garden",
+    neighborhood: "Oak Hill",
+    ages: "1-7",
+    address: "8907 Circle Dr.",
+    tags: ["Playground", "Food trailers", "Mocktails"],
+    summary:
+      "A family-friendly Oak Hill drink spot with beer, cocktails, wine, mocktails, nearby food trailers, and a kid-friendly playground.",
+    parentNote:
+      "Useful for southwest Austin families who want a casual outdoor spot without driving across town.",
+    image:
+      "https://images.unsplash.com/photo-1532635249-6a2f6d4ce208?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Outdoor picnic tables at a casual beer garden",
+    sourceUrl: "https://www.dionysusatx.com/",
+    sourceLabel: "Dionysus",
+  },
+  {
+    id: 15,
+    name: "The Good Lot",
+    category: "Beer Garden",
+    neighborhood: "Cedar Park",
+    ages: "1-8",
+    address: "2500 W. New Hope Dr.",
+    tags: ["Playscape", "Food trucks", "Shade"],
+    summary:
+      "A north Austin-area beer garden with a tree-filled yard, food trucks, live music, yard games, and a kids' playscape.",
+    parentNote:
+      "Not Austin proper, but strong for north-side families who want shade, room, and an easy food-truck setup.",
+    image:
+      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Food truck park with picnic tables outdoors",
+    sourceUrl: "https://www.thegoodlotcp.com/",
+    sourceLabel: "The Good Lot",
+  },
+  {
+    id: 16,
+    name: "Hat Creek Burger Co. Burnet",
+    category: "Restaurant",
+    neighborhood: "Burnet Road",
+    ages: "1-8",
+    address: "5400 Burnet Rd.",
+    tags: ["Playground", "Burgers", "Beer & wine"],
+    summary:
+      "An Austin burger staple with counter service, a spacious patio, beer and wine, and a playground that makes dinner easier.",
+    parentNote:
+      "One of the simplest dinner wins: order at the counter, sit near the play area, and keep expectations happily low-key.",
+    image:
+      "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Burger and fries on a restaurant table",
+    sourceUrl: "https://hatcreekburgers.com/restaurants/burnet-rd",
+    sourceLabel: "Hat Creek Burger Company",
+  },
+  {
+    id: 17,
+    name: "Phil's Ice House Burnet",
+    category: "Restaurant",
+    neighborhood: "Allandale",
+    ages: "1-8",
+    address: "5620 Burnet Rd.",
+    tags: ["Playscape", "Burgers", "Ice cream nearby"],
+    summary:
+      "A casual burger spot built for families, with kid-friendly energy, draft beer, and Amy's Ice Creams next door.",
+    parentNote:
+      "Great for toddlers who need to move before or after food. The Burnet location is the classic playscape pick.",
+    image:
+      "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Classic cheeseburger on a tray",
+    sourceUrl: "https://www.philsicehouse.com/locations/",
+    sourceLabel: "Phil's Ice House",
+  },
+  {
+    id: 18,
+    name: "Waterloo Ice House 360 & 2222",
+    category: "Restaurant",
+    neighborhood: "Northwest Austin",
+    ages: "1-8",
+    address: "6203 N. Capital of Texas Hwy.",
+    tags: ["Patio", "Playscape", "Full bar"],
+    summary:
+      "A long-running Austin family restaurant with breakfast, burgers, a full bar, and a big outdoor patio near Bull Creek.",
+    parentNote:
+      "A good northwest option when you need real food and kid movement in the same stop.",
+    image:
+      "https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Casual restaurant patio with tables",
+    sourceUrl: "https://www.waterlooicehouse.com/360-2222-menus",
+    sourceLabel: "Waterloo Ice House",
+  },
+  {
+    id: 19,
+    name: "Bouldin Acres South Lamar",
+    category: "Restaurant",
+    neighborhood: "South Lamar",
+    ages: "2-8",
+    address: "2027 S. Lamar Blvd.",
+    tags: ["Playground", "Food trucks", "Pickleball"],
+    summary:
+      "A big indoor-outdoor restaurant and drinkery with food, a full bar, pickleball, lawn games, and a kids' playground.",
+    parentNote:
+      "Kid-friendly hours matter here; their site notes kids are welcome until 8 PM.",
+    image:
+      "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Outdoor picnic tables and lawn games",
+    sourceUrl: "https://lamar.bouldinacres.com/",
+    sourceLabel: "Bouldin Acres",
+  },
+  {
+    id: 20,
+    name: "Ski Shores Cafe",
+    category: "Restaurant",
+    neighborhood: "Lake Austin",
+    ages: "2-8",
+    address: "2905 Pearce Rd.",
+    tags: ["Lakefront", "Playground", "Outdoor"],
+    summary:
+      "A classic Lake Austin stop with burgers, fried catfish, outdoor seating, full bar, and a family-friendly lake vibe.",
+    parentNote:
+      "The water views are part of the fun, so this is better for kids who can follow directions near an open lake setting.",
+    image:
+      "https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Outdoor lakeside restaurant tables",
+    sourceUrl: "https://www.skishorescafe.com/",
+    sourceLabel: "Ski Shores Cafe",
+  },
+  {
+    id: 21,
+    name: "Loudmouth Pizza",
+    category: "Restaurant",
+    neighborhood: "East Austin",
+    ages: "2-8",
+    address: "1209 Rosewood Ave.",
+    tags: ["Pizza", "Play area", "Patio"],
+    summary:
+      "A Central East Austin pizzeria with wood-fired pies, cocktails, weekend brunch, and a large outdoor lawn with a kids' play area.",
+    parentNote:
+      "Good for pizza nights when you want nicer food but still need space for kids to wiggle.",
+    image:
+      "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Wood-fired pizza on a restaurant table",
+    sourceUrl: "https://www.loudmouth.pizza/",
+    sourceLabel: "Loudmouth",
+  },
+  {
+    id: 22,
+    name: "Nomadic Outpost",
+    category: "Beer Garden",
+    neighborhood: "Sunset Valley",
+    ages: "1-8",
+    address: "3505 Country White Ln.",
+    tags: ["Playground", "Coffee", "Food trucks"],
+    summary:
+      "A Nomadic Beerworks beer garden with coffee, local beer, cocktails, food trucks, and a large outdoor play-friendly yard.",
+    parentNote:
+      "Useful because it works at different times of day: coffee in the morning, food trucks later, and outdoor space for kids.",
+    image:
+      "https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "A relaxed outdoor beer garden with picnic tables.",
+    sourceUrl: "https://www.nomadicbeerworks.com/outpost",
+    sourceLabel: "Nomadic Outpost",
+  },
+  {
+    id: 23,
+    name: "Bartholomew Splash Pad",
+    category: "Park",
+    neighborhood: "Mueller / Windsor Park",
+    ages: "1-8",
+    address: "5201 Berkman Dr.",
+    tags: ["Splash pad", "Free", "Seasonal"],
+    summary:
+      "A free city splash pad near Bartholomew District Park, listed by Austin Parks as open May 1 through October 31.",
+    parentNote:
+      "Bring water shoes, towels, and a backup plan in case weather or maintenance changes the day.",
+    image:
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Children playing in water on a sunny day",
+    sourceUrl: "https://www.austintexas.gov/parks/locations/pools-and-splash-pads",
+    sourceLabel: "Austin Parks and Recreation",
+  },
+  {
+    id: 24,
+    name: "Liz Carpenter Splash Pad",
+    category: "Park",
+    neighborhood: "Bouldin / Butler Park",
+    ages: "1-8",
+    address: "200 Dawson Rd.",
+    tags: ["Splash pad", "Downtown", "Free"],
+    summary:
+      "A central city splash pad near Butler Park and the Long Center, useful for hot mornings close to downtown.",
+    parentNote:
+      "Pair it with a stroller walk or snacks nearby, but keep sun protection high on the list.",
+    image:
+      "https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Splashing water at a public water play area",
+    sourceUrl: "https://www.austintexas.gov/parks/locations/pools-and-splash-pads",
+    sourceLabel: "Austin Parks and Recreation",
+  },
+  {
+    id: 25,
+    name: "Ricky Guerrero Splash Pad",
+    category: "Park",
+    neighborhood: "South Austin",
+    ages: "1-8",
+    address: "1100 Brodie St.",
+    tags: ["Splash pad", "Free", "Neighborhood park"],
+    summary:
+      "A South Austin city splash pad that works well for a quick cool-down without turning the day into a full pool outing.",
+    parentNote:
+      "Best as a simple neighborhood stop: towels, snacks, sunscreen, and done.",
+    image:
+      "https://images.unsplash.com/photo-1559825481-12a05cc00344?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Kids running through water spray outdoors",
+    sourceUrl: "https://www.austintexas.gov/parks/locations/pools-and-splash-pads",
+    sourceLabel: "Austin Parks and Recreation",
+  },
+  {
+    id: 26,
+    name: "Rosewood Splash Pad",
+    category: "Park",
+    neighborhood: "East Austin",
+    ages: "1-8",
+    address: "2300 Rosewood Ave.",
+    tags: ["Splash pad", "Free", "East Austin"],
+    summary:
+      "An East Austin splash pad at Rosewood Park, part of the city splash pad network for hot-weather play.",
+    parentNote:
+      "The city lists splash pads as seasonal, so confirm status if you are making a special trip.",
+    image:
+      "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Sunny park lawn with families outdoors",
+    sourceUrl: "https://www.austintexas.gov/parks/locations/rosewood-splash-pad",
+    sourceLabel: "Austin Parks and Recreation",
+  },
 ];
 
 export const weeklyEvents: WeeklyEvent[] = [
@@ -413,6 +690,7 @@ export const categories = [
   "All",
   "Restaurant",
   "Brewery",
+  "Beer Garden",
   "Coffee",
   "Play Spot",
   "Park",
