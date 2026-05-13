@@ -17,6 +17,11 @@ export type Spot = {
   parentNote: string;
   image: string;
   imageAlt: string;
+  photoCredit?: string;
+  photoCreditUrl?: string;
+  photoLicense?: string;
+  photoLicenseUrl?: string;
+  photoNote?: string;
   sourceUrl: string;
   sourceLabel: string;
 };
@@ -52,9 +57,13 @@ export const spots: Spot[] = [
       "Austin's children's museum, with open-ended exhibits and a strong setup for hot, cold, or rainy days.",
     parentNote:
       "Baby Bloomers on Friday and Saturday mornings is especially useful for kids 0-3.",
-    image:
-      "https://images.unsplash.com/photo-1564429238817-393bd4286b2d?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "Children playing with colorful building blocks",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/2a/The_thinkery_austin_2014.jpg",
+    imageAlt: "Exterior of Thinkery in Austin.",
+    photoCredit: "Larry D. Moore",
+    photoCreditUrl: "https://commons.wikimedia.org/wiki/File:The_thinkery_austin_2014.jpg",
+    photoLicense: "CC BY 4.0",
+    photoLicenseUrl: "https://creativecommons.org/licenses/by/4.0",
+    photoNote: "cropped",
     sourceUrl: "https://thinkeryaustin.org/visit-us",
     sourceLabel: "Thinkery",
   },
@@ -70,9 +79,13 @@ export const spots: Spot[] = [
       "A destination playground with a water feature, treehouse observation pod, restrooms, and big shade trees.",
     parentNote:
       "Parking is limited, so weekday mornings or stroller access from nearby streets tend to feel easier.",
-    image:
-      "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "Sunny playground with slides and climbing structures",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/e3/Pease_Park_Gate.jpg",
+    imageAlt: "Stone gate at Pease Park in Austin.",
+    photoCredit: "Bryanrutherford0",
+    photoCreditUrl: "https://commons.wikimedia.org/wiki/File:Pease_Park_Gate.jpg",
+    photoLicense: "CC BY-SA 4.0",
+    photoLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
+    photoNote: "cropped",
     sourceUrl: "https://peasepark.org/kingsbury-commons",
     sourceLabel: "Pease Park Conservancy",
   },
@@ -106,9 +119,13 @@ export const spots: Spot[] = [
       "A low-pressure nature stop with indoor and outdoor exhibits on the western edge of Zilker Park.",
     parentNote:
       "Plan for walking shoes, sunscreen, and a little extra time for kids who want to linger outside.",
-    image:
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "Family walking on a shaded nature trail",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Austin_nature_center_entrance.jpg",
+    imageAlt: "Entrance sign at the Austin Nature and Science Center.",
+    photoCredit: "Larry D. Moore",
+    photoCreditUrl: "https://commons.wikimedia.org/wiki/File:Austin_nature_center_entrance.jpg",
+    photoLicense: "CC BY 4.0",
+    photoLicenseUrl: "https://creativecommons.org/licenses/by/4.0",
+    photoNote: "cropped",
     sourceUrl:
       "https://www.austintexas.gov/parks/plan-your-visit-austin-nature-science-center",
     sourceLabel: "Austin Parks and Recreation",
@@ -126,8 +143,14 @@ export const spots: Spot[] = [
     parentNote:
       "The paths are the point here: it is a good calm outing when everyone needs a slower morning.",
     image:
-      "https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "Lush garden path with trees and flowers",
+      "https://upload.wikimedia.org/wikipedia/commons/5/50/Mabel_Davis_Rose_Garden_-_Zilker_Botanical_Garden_-_Austin%2C_Texas_-_DSC08873.jpg",
+    imageAlt: "Mabel Davis Rose Garden at Zilker Botanical Garden.",
+    photoCredit: "Daderot",
+    photoCreditUrl:
+      "https://commons.wikimedia.org/wiki/File:Mabel_Davis_Rose_Garden_-_Zilker_Botanical_Garden_-_Austin,_Texas_-_DSC08873.jpg",
+    photoLicense: "CC0",
+    photoLicenseUrl: "https://creativecommons.org/publicdomain/zero/1.0/",
+    photoNote: "cropped",
     sourceUrl: "https://zilkergarden.org/visit/",
     sourceLabel: "Zilker Botanical Garden",
   },
@@ -144,8 +167,14 @@ export const spots: Spot[] = [
     parentNote:
       "Bring water and expect dirt, rocks, and wandering. That is the charm.",
     image:
-      "https://images.unsplash.com/photo-1468327768560-75b778cbb551?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "Wildflowers blooming beside a garden path",
+      "https://upload.wikimedia.org/wikipedia/commons/4/43/Garden_Chairs_Wildflower_Center_Austin_Texas_2024.jpg",
+    imageAlt: "Garden chairs at Lady Bird Johnson Wildflower Center.",
+    photoCredit: "Larry D. Moore",
+    photoCreditUrl:
+      "https://commons.wikimedia.org/wiki/File:Garden_Chairs_Wildflower_Center_Austin_Texas_2024.jpg",
+    photoLicense: "CC BY 4.0",
+    photoLicenseUrl: "https://creativecommons.org/licenses/by/4.0",
+    photoNote: "cropped",
     sourceUrl: "https://www.ladybirdjohnson.org/wildflowercenter",
     sourceLabel: "Lady Bird Johnson Wildflower Center",
   },
@@ -162,8 +191,14 @@ export const spots: Spot[] = [
     parentNote:
       "Check the library calendar before you go; storytimes and youth events change often.",
     image:
-      "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "Bright library shelves with children's books",
+      "https://upload.wikimedia.org/wikipedia/commons/e/ec/Austin_Public_Library_August_2019_02.jpg",
+    imageAlt: "Exterior of Austin Central Library.",
+    photoCredit: "Michael Barera",
+    photoCreditUrl:
+      "https://commons.wikimedia.org/wiki/File:Austin_Public_Library_August_2019_02.jpg",
+    photoLicense: "CC BY-SA 4.0",
+    photoLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
+    photoNote: "cropped",
     sourceUrl: "https://library.austintexas.gov/central-library",
     sourceLabel: "Austin Public Library",
   },
@@ -467,9 +502,13 @@ export const spots: Spot[] = [
       "A central city splash pad near Butler Park and the Long Center, useful for hot mornings close to downtown.",
     parentNote:
       "Pair it with a stroller walk or snacks nearby, but keep sun protection high on the list.",
-    image:
-      "https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "Splashing water at a public water play area",
+    image: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Butler_Metro_Park_Austin_View.jpg",
+    imageAlt: "View from Butler Metro Park near the Liz Carpenter Splash Pad.",
+    photoCredit: "Larry D. Moore",
+    photoCreditUrl: "https://commons.wikimedia.org/wiki/File:Butler_Metro_Park_Austin_View.jpg",
+    photoLicense: "CC BY-SA 4.0",
+    photoLicenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
+    photoNote: "cropped",
     sourceUrl: "https://www.austintexas.gov/parks/locations/pools-and-splash-pads",
     sourceLabel: "Austin Parks and Recreation",
   },
@@ -504,8 +543,14 @@ export const spots: Spot[] = [
     parentNote:
       "The city lists splash pads as seasonal, so confirm status if you are making a special trip.",
     image:
-      "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "Sunny park lawn with families outdoors",
+      "https://upload.wikimedia.org/wikipedia/commons/b/bb/Rosewood_Park_Austin_Entry_Column.jpg",
+    imageAlt: "Entry column at Rosewood Park in Austin.",
+    photoCredit: "Larry D. Moore",
+    photoCreditUrl:
+      "https://commons.wikimedia.org/wiki/File:Rosewood_Park_Austin_Entry_Column.jpg",
+    photoLicense: "CC BY 4.0",
+    photoLicenseUrl: "https://creativecommons.org/licenses/by/4.0",
+    photoNote: "cropped",
     sourceUrl: "https://www.austintexas.gov/parks/locations/rosewood-splash-pad",
     sourceLabel: "Austin Parks and Recreation",
   },

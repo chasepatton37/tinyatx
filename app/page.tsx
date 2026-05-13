@@ -149,6 +149,34 @@ function SpotCard({ spot }: { spot: Spot }) {
           className="object-cover"
         />
       </div>
+      {spot.photoCredit ? (
+        <div className="border-t border-[#efe8df] bg-[#fffaf3] px-5 py-2 text-[11px] leading-5 text-[#6b7b74]">
+          Photo:{" "}
+          <a
+            href={spot.photoCreditUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="font-medium text-[#4f6d64] underline decoration-[#cbd8d3] underline-offset-2"
+          >
+            {spot.photoCredit}
+          </a>
+          {spot.photoLicense && spot.photoLicenseUrl ? (
+            <>
+              {" "}
+              /{" "}
+              <a
+                href={spot.photoLicenseUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="font-medium text-[#4f6d64] underline decoration-[#cbd8d3] underline-offset-2"
+              >
+                {spot.photoLicense}
+              </a>
+            </>
+          ) : null}
+          {spot.photoNote ? <> ({spot.photoNote})</> : null}
+        </div>
+      ) : null}
       <div className="p-5">
         <div className="flex items-start justify-between gap-3">
           <div>
